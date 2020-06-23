@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mav -Dmaven.test.failure.ignore=true install'
+                sh 'mvn -Dmaven.test.failure.ignore=true install'
             }
             post {
                 success {
