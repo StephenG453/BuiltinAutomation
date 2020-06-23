@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Testing'
                 script {
-                    def browser = ['chrome']
+                    def browser = 'chrome'
                 }
             }
         }
