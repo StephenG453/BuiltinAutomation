@@ -3,7 +3,6 @@ pipeline {
     tools {
         maven 'Maven 3.6.3'
     }
-
     stages {
         stage ('Initialize') {
             steps {
@@ -13,10 +12,15 @@ pipeline {
                     '''
             }
         }
-
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'mav -Dmaven.test.failure.ignore=true install'
+            }
+            post {
+                success {
+                    echo 'Maven build succeeded!'
+                }
             }
         }
         stage('Test') {
