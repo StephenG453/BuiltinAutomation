@@ -16,6 +16,7 @@ pipeline {
             steps {
                 sh  '''
                     pwd
+                    cd UIAutomation
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                     '''
