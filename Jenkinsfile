@@ -1,8 +1,9 @@
 pipeline {
     agent {
-        node {
-            customWorkspace '/Users/cbrat62'
-        }
+//        node {
+//            customWorkspace '/Users/cbrat62'
+//        }
+        customWorkspace '/Users/cbrat62'
     }
     tools {
         maven 'Maven 3.6.3'
