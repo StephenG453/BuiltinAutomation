@@ -1,8 +1,8 @@
 pipeline {
-    agent any
-    label {
-        label ""
-        customWorkspace "C:/work/${BRANCH_NAME}"
+    agent {
+        node {
+            customWorkspace '/Users/cbrat62'
+        }
     }
     tools {
         maven 'Maven 3.6.3'
