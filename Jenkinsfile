@@ -6,7 +6,7 @@ pipeline {
 //        customWorkspace '/Users/cbrat62'
 //    }
     agent any
-        customWorkspace '/User/cbrat62'
+//        customWorkspace '/User/cbrat62'
 
     tools {
         maven 'Maven 3.6.3'
