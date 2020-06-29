@@ -15,6 +15,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 sh  '''
+                    pwd
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                     '''
