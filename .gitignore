@@ -9,5 +9,5 @@
 /target/test-classes/stepDefinitions/JobPostPageDefinitions.class
 /out/test/BuiltinAutomation/resources/OpenWebpageAndPressButton.feature
 /target/test-classes/OpenWebpageAndPressButton.feature
-/target/test-classes/Runner.class
+/target/test-classes/RunnerTest.class
 /target/classes/pages/WebDriverInitiation.class
