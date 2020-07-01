@@ -1,0 +1,13 @@
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/cucumber.json
+/target/classes/pages/HomePage.class
+/target/test-classes/stepDefinitions/HomePageStepDefinitions.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/classes/pages/JobPostPage.class
+/target/test-classes/stepDefinitions/JobPostPageDefinitions.class
+/out/test/BuiltinAutomation/resources/OpenWebpageAndPressButton.feature
+/target/test-classes/OpenWebpageAndPressButton.feature
+/target/test-classes/Runner.class
+/target/classes/pages/WebDriverInitiation.class
