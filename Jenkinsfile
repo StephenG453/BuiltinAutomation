@@ -36,6 +36,8 @@ pipeline {
             steps {
                 echo 'Testing..'
 
+                sh 'mvn test'
+
                 cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/cucumber.json",
                     jsonReportDirectory: 'target'
