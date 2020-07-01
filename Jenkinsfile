@@ -38,7 +38,7 @@ pipeline {
 
                 cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/cucumber.json",
-                    jsonReportDirectory: 'UIAutomation/target'
+                    jsonReportDirectory: 'target'
             }
         }
         stage('Deploy') {
