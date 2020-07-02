@@ -14,6 +14,9 @@ public class HomePage extends WebDriverInitiation {
     @FindBy(xpath = "//a[@class='employers']")
     private WebElement postJobButton;
 
+    @FindBy(xpath = "//a[@class='frontpage-sign-up-cta']")
+    private WebElement communitySignUpButton;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -24,5 +27,9 @@ public class HomePage extends WebDriverInitiation {
 
     public void clickPostJobButton() {
         postJobButton.click();
+    }
+
+    public void clickCommunitySignUpButton() {
+        communitySignUpButton.click();
     }
 }
