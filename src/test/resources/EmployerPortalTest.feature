@@ -1,4 +1,4 @@
-Feature: test ability to open BuiltIn.com and click the PostJobs button
+Feature: test functionality of the Employers portal on builtin.com
 
   Scenario: verification that the PostJobs button can be clicked and opens a new page
     Given builtin.com is loaded and home page is visible

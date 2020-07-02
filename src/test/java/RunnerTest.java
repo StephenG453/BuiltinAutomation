@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src/test/resources/OpenWebpageAndPressButtonTest.feature",
+        features="src/test/resources/EmployerPortalTest.feature",
         glue = "stepDefinitions",
         plugin = {"json:target/cucumber.json"})
 public class RunnerTest {
