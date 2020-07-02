@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 //dont like this
-public class JobPostPage extends WebDriverInitiation {
+public class EmployersPage extends WebDriverInitiation {
 
     @FindBy(xpath = "//span[contains(text(),'Top talent can go anywhere.')]")
     private WebElement pageHeader;
@@ -13,7 +13,7 @@ public class JobPostPage extends WebDriverInitiation {
     @FindBy(xpath = "//a[contains(text(),'Get Started')]")
     private WebElement getStartedButton;
 
-    public JobPostPage(WebDriver driver) {
+    public EmployersPage(WebDriver driver) {
         super(driver);
     }
 

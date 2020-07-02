@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
-import pages.JobPostPage;
+import pages.EmployersPage;
 import pages.WebDriverInitiation;
 
 public class HomePageStepDefinitions {
@@ -15,7 +15,7 @@ public class HomePageStepDefinitions {
 
     WebDriverInitiation webDriverInitiation;
     private HomePage homePage;
-    private JobPostPage jobPostPage;
+    private EmployersPage employersPage;
 
     @Given("builtin.com is loaded and home page is visible")
     public void initializeDriverAndOpenBuiltIn() {
@@ -38,8 +38,8 @@ public class HomePageStepDefinitions {
 
     @Then("job post page is displayed")
     public void jobPostPageIsDisplayed() {
-        jobPostPage = new JobPostPage(driver);
-        Assertions.assertTrue(jobPostPage.isAt());
+        employersPage = new EmployersPage(driver);
+        Assertions.assertTrue(employersPage.isAt());
 
 //        webDriverInitiation.cleanUp();
     }

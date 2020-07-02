@@ -1,18 +1,15 @@
 package stepDefinitions;
 
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import pages.HomePage;
-import pages.JobPostPage;
+import pages.EmployersPage;
 import pages.WebDriverInitiation;
 
 public class JobPostPageDefinitions {
 
     private WebDriver driver;
     private WebDriverInitiation webDriverInitiation;
-    private JobPostPage jobPostPage;
+    private EmployersPage employersPage;
 
     @When("get started button is pressed")
     public void userClickGetStartedButton() {
@@ -23,11 +20,11 @@ public class JobPostPageDefinitions {
 
         this.driver = HomePageStepDefinitions.driver;
 
-        jobPostPage = new JobPostPage(driver);
+        employersPage = new EmployersPage(driver);
 //        driver = webDriverInitiation.driver;
 
 //        jobPostPage = new JobPostPage(driver);
-        jobPostPage.pressGetStartedButton();
+        employersPage.pressGetStartedButton();
     }
 
 }
