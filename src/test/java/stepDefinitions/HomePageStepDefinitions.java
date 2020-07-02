@@ -28,13 +28,10 @@ public class HomePageStepDefinitions {
         driver = webDriverInitiation.driver;
         homePage = new HomePage(driver);
         Assertions.assertTrue(homePage.isAtHomePage());
-
-        //
     }
 
     @When("user clicks post job button")
     public void userClicksPostJobButton() {
-//        homePage = new HomePage();
         homePage.clickPostJobButton();
     }
 
@@ -43,7 +40,7 @@ public class HomePageStepDefinitions {
         employersPage = new EmployersPage(driver);
         Assertions.assertTrue(employersPage.isAt());
 
-//        webDriverInitiation.cleanUp();
+        webDriverInitiation.cleanUp();
     }
 
     @When("user clicks community sign up button")
@@ -55,5 +52,7 @@ public class HomePageStepDefinitions {
     public void communitySignUpPageIsDisplayed() {
         communityPage = new CommunityPage(driver);
         Assertions.assertTrue(communityPage.isAt());
+
+        webDriverInitiation.cleanUp();
     }
 }
