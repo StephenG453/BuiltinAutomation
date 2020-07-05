@@ -2,11 +2,9 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-import java.util.concurrent.TimeUnit;
 
-public class HomePage extends WebDriverInitiation {
+public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='block block-builtin-frontpage-trending-articles']//div[@class='block-content']//div[1]")
     private WebElement welcomeText;
@@ -19,6 +17,7 @@ public class HomePage extends WebDriverInitiation {
 
     public HomePage(WebDriver driver) {
         super(driver);
+        driver.get("https://builtin.com/");
     }
 
     public boolean isAtHomePage() {

@@ -8,24 +8,23 @@ import org.openqa.selenium.WebDriver;
 import pages.CommunityPage;
 import pages.HomePage;
 import pages.EmployersPage;
-import pages.WebDriverInitiation;
 
-public class HomePageStepDefinitions {
+public class HomePageStepDefinitions extends BaseTest {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
 
-    WebDriverInitiation webDriverInitiation;
+    private BaseTest baseTest;
+
     private HomePage homePage;
     private EmployersPage employersPage;
     private CommunityPage communityPage;
 
     @Given("builtin.com is loaded and home page is visible")
     public void initializeDriverAndOpenBuiltIn() {
-        webDriverInitiation = new WebDriverInitiation(driver);
-        webDriverInitiation.initialize();
-        webDriverInitiation.loadWebPage();
+        baseTest = new BaseTest();
+        baseTest.initialize();
+        driver = baseTest.driver;
 
-        driver = webDriverInitiation.driver;
         homePage = new HomePage(driver);
         Assertions.assertTrue(homePage.isAtHomePage());
     }
@@ -40,7 +39,7 @@ public class HomePageStepDefinitions {
         employersPage = new EmployersPage(driver);
         Assertions.assertTrue(employersPage.isAt());
 
-        webDriverInitiation.cleanUp();
+        baseTest.cleanUp();
     }
 
     @When("user clicks community sign up button")
@@ -53,6 +52,6 @@ public class HomePageStepDefinitions {
         communityPage = new CommunityPage(driver);
         Assertions.assertTrue(communityPage.isAt());
 
-        webDriverInitiation.cleanUp();
+        baseTest.cleanUp();
     }
 }
